@@ -30,7 +30,7 @@ export default function App() {
               options={{ headerShown: false }} // Hide header for splash screen
           />
           <Stack.Screen
-              name="Register"
+              name="SignUp"
               component={SignUp}
               options={{ headerShown: false }}
           />

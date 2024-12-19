@@ -7,7 +7,7 @@ const Splashscreen = ({ navigation }) => {
         // Navigate to SplashScreen2 after 3 seconds
         const timer = setTimeout(() => {
             navigation.navigate('Login');
-        }, 5000); // 3 seconds
+        }, 3000); // 3 seconds
 
         // Clean up the timer when the component is unmounted
         return () => clearTimeout(timer);

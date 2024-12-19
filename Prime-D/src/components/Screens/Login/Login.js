@@ -56,7 +56,7 @@ const Login = ({ navigation }) => {
                 <CustomCheckBox
                     label= "Remember me"
                 />
-                <TouchableOpacity style={styles.linkContainer}>
+                <TouchableOpacity style={styles.linkContainer} onPress={() => navigation.navigate('ForgotPassword')}>
                     <Text style={styles.link}>Forgot Password ?</Text>
                 </TouchableOpacity>
             </View>
@@ -66,8 +66,8 @@ const Login = ({ navigation }) => {
             />
             <View style={styles.SignUpContainer}>
                 <Text style={styles.divText}>Don't have an account yet? </Text>
-                <TouchableOpacity>
-                    <Text style={styles.link}>Sign ip</Text>
+                <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+                    <Text style={styles.link}>Sign Up</Text>
                 </TouchableOpacity>
             </View>
         </LinearGradient>
