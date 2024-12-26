@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {LinearGradient} from "expo-linear-gradient";
-import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
+import {StyleSheet, Text, TouchableOpacity, View, Dimensions} from "react-native";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import CustomTextBox from "../../CustomTextBox/CustomTextBox";
 import CustomCheckBox from "../../CustomCheckBox/CustomCheckBox";
@@ -85,6 +85,8 @@ const SignUp = ({ navigation }) => {
     );
 };
 
+const { height } = Dimensions.get('window');
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -95,7 +97,7 @@ const styles = StyleSheet.create({
         fontSize: 32,
         fontWeight: 'bold',
         color: '#FFFFFF',
-        marginBottom: 20,
+        marginBottom: height * 0.02,
     },
     loaderContainer: {
         justifyContent: 'center',
@@ -114,7 +116,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        marginBottom: 60,
+        marginBottom: 30,
     },
     btn: {
         height: 50,
@@ -137,14 +139,14 @@ const styles = StyleSheet.create({
     divText: {
         fontSize: 12,
         color: '#FFFFFF',
-        marginBottom: 60,
+        marginBottom: 30,
     },
     textBoxContainer: {
         marginBottom: 25,
     },
     checkBoxContainer: {
         justifyContent: 'center',
-        width: 300,
+        width: '80%',
         flexDirection: 'row',
         marginBottom: 25,
     },
